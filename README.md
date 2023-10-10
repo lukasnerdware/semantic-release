@@ -13,8 +13,8 @@ Follow these instructions to set up the project and configure semantic release.
 1. Clone the repository to your local machine:
 
    ```shell
-   git clone https://github.com/your-username/your-node-express-app.git
-   cd your-node-express-app
+   git clone https://github.com/lukasnerdware/semantic-release.git
+   cd semantic-release
    ````
 2. Install project dependencies:
     ```shell 
