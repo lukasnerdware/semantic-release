@@ -97,8 +97,7 @@ jobs:
 ``````
 
 4. Commit the changes and push to your GitHub repository.
-5. Ensure you give the right permision to your github workflow [Workflow permissions](https://github.com/lukretium/semantic-release-basic/settings/actions)
-  --> Read and Write Permissions  
+5. Ensure you give the Read and write permissions permision to your github workflow (Settings --> Actions --> General --> Workflow permissions)
 1. Add NPM_TOKEN as Github Secret
    1. GO to Settings
    2. Security --> Secrets and variables --> New Repository secret
