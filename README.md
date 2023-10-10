@@ -83,7 +83,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
@@ -92,17 +92,16 @@ jobs:
         run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 ``````
 
 4. Commit the changes and push to your GitHub repository.
-5. Ensure you give the right permision to your github workflow **TODO**
-  https://github.com/lukretium/semantic-release-basic/settings/actions
-  Workflow permissions
+5. Ensure you give the right permision to your github workflow [Workflow permissions](https://github.com/lukretium/semantic-release-basic/settings/actions)
   --> Read and Write Permissions  
-6. Add NPM_TOKEN as Github Secret
+1. Add NPM_TOKEN as Github Secret
    1. GO to Settings
    2. Security --> Secrets and variables --> New Repository secret
    3. Create NPM_TOKEN secret (requires npm account)
-7. Now, whenever you merge changes into the main branch, the GitHub Actions pipeline will automatically trigger a semantic release based on your commit messages and versioning rules defined in release.config.js.
+2. Now, whenever you merge changes into the main branch, the GitHub Actions pipeline will automatically trigger a semantic release based on your commit messages and versioning rules defined in release.config.js.
 
