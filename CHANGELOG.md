@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/lukasnerdware/semantic-release/compare/v1.0.0...v1.1.0) (2023-10-10)
+
+
+### Features
+
+* add v3 endpoint ([e07da4a](https://github.com/lukasnerdware/semantic-release/commit/e07da4ad3dcd7ef529ea19984fc1aefab75e89c5))
+
 # 1.0.0 (2023-10-10)
 
 
